@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Comanda de Bebidas</title>
-  <link rel="stylesheet" href="./styles/h5p.css">
+   <link rel="stylesheet" href="./h5p-standalone/styles/h5p.css">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -26,7 +26,8 @@
 
     new H5PStandalone.H5P(container, {
       frameJs: './frame.bundle.js',
-      frameCss: './styles/h5p.css',
+    frameCss: './h5p-standalone/styles/h5p.css',
+
       h5pJsonPath: './workspace/comanda-de-bebidas',
       librariesPath: './workspace/comanda-de-bebidas',
       contentJsonPath: './workspace/comanda-de-bebidas/content'
