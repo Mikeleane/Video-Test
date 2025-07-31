@@ -1,47 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comanda de Bebidas - H5P</title>
+  <title>H5P Test</title>
   <link rel="stylesheet" href="h5p-standalone/styles/h5p.css">
-  <style>
-    body {
-      font-family: sans-serif;
-      background-color: #f8f8f8;
-      padding: 2rem;
-      margin: 0;
-    }
-    h1 {
-      text-align: center;
-    }
-    #h5p-container {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-  </style>
 </head>
 <body>
   <h1>Comanda de Bebidas</h1>
   <div id="h5p-container"></div>
 
-  <!-- Load main.bundle.js first -->
   <script src="h5p-standalone/main.bundle.js"></script>
-  <script src="h5p-standalone/frame.bundle.js"></script>
-
   <script>
-    // Wait until the browser confirms scripts are loaded
-    window.addEventListener('load', () => {
-      new H5PStandalone(document.getElementById('h5p-container'), {
-        h5pJsonPath: 'workspace/comanda-de-bebidas',
-        frameJs: 'h5p-standalone/frame.bundle.js',
-        frameCss: 'h5p-standalone/styles/h5p.css'
-      });
+    new H5PStandalone(document.getElementById('h5p-container'), {
+      id: 'comanda',
+      frameJs: 'h5p-standalone/frame.bundle.js',
+      frameCss: 'h5p-standalone/styles/h5p.css',
+      h5pJsonPath: 'workspace',
+      contentJsonPath: 'workspace/content',
+      librariesPath: 'workspace/libraries',
+      title: 'Comanda de Bebidas'
     });
   </script>
 </body>
 </html>
+
