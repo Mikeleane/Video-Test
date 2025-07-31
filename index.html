@@ -8,9 +8,9 @@
   <style>
     body {
       font-family: sans-serif;
-      margin: 0;
-      padding: 2rem;
       background-color: #f8f8f8;
+      padding: 2rem;
+      margin: 0;
     }
     h1 {
       text-align: center;
@@ -18,9 +18,9 @@
     #h5p-container {
       max-width: 800px;
       margin: 2rem auto;
-      background: white;
-      border-radius: 8px;
+      background: #fff;
       padding: 1rem;
+      border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
   </style>
@@ -29,14 +29,20 @@
   <h1>Comanda de Bebidas</h1>
   <div id="h5p-container"></div>
 
-<script src="h5p-standalone/main.bundle.js"></script>
-<script>
-  new H5PStandalone(document.getElementById('h5p-container'), {
-    h5pJsonPath: 'workspace/comanda-de-bebidas',
-    frameJs: 'h5p-standalone/frame.bundle.js',
-    frameCss: 'h5p-standalone/styles/h5p.css'
-  });
-</script>
+  <!-- Load main.bundle.js first -->
+  <script src="h5p-standalone/main.bundle.js"></script>
+  <script src="h5p-standalone/frame.bundle.js"></script>
 
+  <script>
+    // Wait until the browser confirms scripts are loaded
+    window.addEventListener('load', () => {
+      new H5PStandalone(document.getElementById('h5p-container'), {
+        h5pJsonPath: 'workspace/comanda-de-bebidas',
+        frameJs: 'h5p-standalone/frame.bundle.js',
+        frameCss: 'h5p-standalone/styles/h5p.css'
+      });
+    });
+  </script>
 </body>
 </html>
+
