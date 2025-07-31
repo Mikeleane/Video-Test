@@ -1,0 +1,1 @@
+// placeholder for h5p-standalone main.bundle.js
