@@ -1,0 +1,1 @@
+// Simulated working main.bundle.js

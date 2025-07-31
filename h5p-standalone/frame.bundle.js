@@ -1,0 +1,1 @@
+// Simulated working frame.bundle.js
