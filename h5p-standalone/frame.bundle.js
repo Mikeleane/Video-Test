@@ -1,0 +1,1 @@
+// Real H5P frame.bundle.js placeholder (simulated content)
