@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
   <title>Comanda de Bebidas</title>
-
-  <!-- H5P Frame Styles -->
-  <link rel="stylesheet" href="h5p-standalone/styles/h5p.css" />
-
+  <link rel="stylesheet" href="./styles/h5p.css">
   <style>
     body {
-      font-family: sans-serif;
-      margin: 2rem;
-      background: #fff;
-    }
-    h1 {
-      font-size: 2rem;
+      font-family: Arial, sans-serif;
+      padding: 20px;
     }
     #h5p-container {
-      margin-top: 20px;
-      min-height: 400px;
+      min-height: 300px;
       border: 1px solid #ccc;
       padding: 10px;
     }
@@ -29,17 +20,16 @@
   <h1>Comanda de Bebidas</h1>
   <div id="h5p-container"></div>
 
-  <!-- H5P Standalone Runtime -->
-  <script src="h5p-standalone/main.bundle.js"></script>
-
+  <script src="./main.bundle.js"></script>
   <script>
-    new H5PStandalone(document.getElementById('h5p-container'), {
-      frameJs: 'h5p-standalone/frame.bundle.js',
-      frameCss: 'h5p-standalone/styles/h5p.css',
-      h5pJsonPath: 'workspace/comanda-de-bebidas',
-      contentJsonPath: 'workspace/comanda-de-bebidas/content',
-      librariesPath: 'workspace/comanda-de-bebidas',
-      title: 'Comanda de Bebidas'
+    const container = document.getElementById('h5p-container');
+
+    new H5PStandalone.H5P(container, {
+      frameJs: './frame.bundle.js',
+      frameCss: './styles/h5p.css',
+      h5pJsonPath: './workspace/comanda-de-bebidas',
+      librariesPath: './workspace/comanda-de-bebidas',
+      contentJsonPath: './workspace/comanda-de-bebidas/content'
     });
   </script>
 </body>
