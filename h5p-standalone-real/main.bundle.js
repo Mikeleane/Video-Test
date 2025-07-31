@@ -1,1 +1,0 @@
-// Real H5P main.bundle.js placeholder (simulated content)
