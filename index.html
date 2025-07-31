@@ -4,15 +4,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Comanda de Bebidas</title>
-  
+
   <!-- H5P Frame Styles -->
   <link rel="stylesheet" href="h5p-standalone/styles/h5p.css" />
 
   <style>
     body {
       font-family: sans-serif;
-      background: #fff;
       margin: 2rem;
+      background: #fff;
     }
     h1 {
       font-size: 2rem;
@@ -29,18 +29,19 @@
   <h1>Comanda de Bebidas</h1>
   <div id="h5p-container"></div>
 
-  <!-- Load the H5P Standalone bundle -->
+  <!-- H5P Standalone Runtime -->
   <script src="h5p-standalone/main.bundle.js"></script>
 
   <script>
     new H5PStandalone(document.getElementById('h5p-container'), {
       frameJs: 'h5p-standalone/frame.bundle.js',
       frameCss: 'h5p-standalone/styles/h5p.css',
-      h5pJsonPath: 'workspace',
-      contentJsonPath: 'workspace/content',
-      librariesPath: 'workspace/libraries',
+      h5pJsonPath: 'workspace/comanda-de-bebidas',
+      contentJsonPath: 'workspace/comanda-de-bebidas/content',
+      librariesPath: 'workspace/comanda-de-bebidas',
       title: 'Comanda de Bebidas'
     });
   </script>
 </body>
 </html>
+
